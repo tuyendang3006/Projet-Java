@@ -8,8 +8,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Vector;
 
-//https://stackjava.com/network-programming/su-dung-jdbc-de-ket-noi-java-voi-database-mysql.html
-//https://o7planning.org/vi/10167/huong-dan-su-dung-java-jdbc
 import com.mysql.cj.jdbc.result.ResultSetMetaData;
 
 import Serveur.Serveur;
@@ -22,7 +20,7 @@ public class ConnecterBD {
 	public void connecter() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			cnn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/logement", "root", "huyendien0978");
+			cnn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/logement", "root", "tuyen1994");
 			stm = cnn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 		} catch (Exception e) {
 
